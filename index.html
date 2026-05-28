@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Creator Mini App</title>
+<style>
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #f4f7f6;
+margin: 0;
+padding: 20px;
+text-align: center;
+}
+.container {
+background: white;
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+max-width: 400px;
+margin: 0 auto;
+}
+h1 { color: #0088cc; font-size: 24px; }
+p { color: #666; font-size: 14px; }
+.btn {
+background-color: #0088cc;
+color: white;
+border: none;
+padding: 12px 25px;
+border-radius: 25px;
+font-size: 16px;
+cursor: pointer;
+font-weight: bold;
+width: 100%;
+margin-top: 15px;
+}
+.ad-box {
+margin-top: 30px;
+padding: 15px;
+background: #eee;
+border-radius: 10px;
+min-height: 100px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>AI ব্যানার ও পোস্টার মেকার</h1>
+<p>আপনার পছন্দের হাই-রেজোলিউশন ৮কে আল্ট্রা-রিয়েলিস্টিক পোস্টার এবং ব্যানার আইডিয়া তৈরি করুন এখানে।</p>
+
+<button class="btn" onclick="generateIdea()">নতুন ডিজাইন আইডিয়া তৈরি করুন</button>
+<p id="idea-text" style="font-weight: bold; color: #333; margin-top: 15px;"></p>
+
+<!-- এখানে Monetag-এর বিজ্ঞাপন দেখাবে -->
+<div class="ad-box">
+<p style="font-size: 12px; color: #999; margin: 0 0 10px 0;">Sponsored Ad</p>
+
+<!-- বক্সে আপনার Monetag থেকে পাওয়া বিজ্ঞাপনের কোডটি নিচে পেস্ট করবেন -->
+<!--
+https://omg10.com/4/11068678
+  -->
+
+</div>
+</div>
+
+<script>
+function generateIdea() {
+const ideas = [
+"সিনেম্যাটিক ৯:১৬ রেশিও এআই পোস্টার ডিজাইন",
+"ফাউন্ডেশনের জন্য আকর্ষণীয় প্রচ্ছদ ব্যানার",
+"এইচডি কোয়ালিটি লোগো ও থিম আইডিয়া",
+"আল্ট্রা-রিয়েলিস্টিক পোর্ট্রেট আর্ট ডিজাইন"
+ ];
+const randomIdea = ideas[Math.floor(Math.random() * ideas.length)];
+document.getElementById('idea-text').innerText = randomIdea;
+}
+</script>
+
+</body>
+</html>
